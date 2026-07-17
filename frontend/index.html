@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Coin Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- The Pre-Game Lobby -->
+    <div id="lobbyUI">
+        <h1>COIN ARENA</h1>
+        <select id="modeSelect">
+            <option value="player">Join as Player (Collect Coins)</option>
+            <option value="observer">Join as Observer (Spectate)</option>
+        </select>
+        <button id="joinBtn">ENTER ARENA</button>
+    </div>
+
+    <!-- The Live Game Interface -->
+    <div id="gameUI" style="display: none;">
+        <h2>Score: <span id="scoreDisplay">0</span></h2>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
