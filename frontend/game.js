@@ -1,7 +1,7 @@
 // --- DEPLOYMENT CONFIG ---
 // When deploying your backend to Render, change this line to your secure wss:// URL!
 // Example: const WS_URL = "wss://coin-arena-backend.onrender.com/ws";
-const WS_URL = "ws://localhost:8000/ws"; 
+const WS_URL = "wss://coin-arena-backend.onrender.com/ws";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
